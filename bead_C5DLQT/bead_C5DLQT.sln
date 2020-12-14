@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bead_C5DLQT", "bead_C5DLQT\bead_C5DLQT.csproj", "{88ADFD70-BFFD-4E3F-9B26-CB437202B10C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88ADFD70-BFFD-4E3F-9B26-CB437202B10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88ADFD70-BFFD-4E3F-9B26-CB437202B10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88ADFD70-BFFD-4E3F-9B26-CB437202B10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88ADFD70-BFFD-4E3F-9B26-CB437202B10C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28607263-D40E-4096-BD98-AAF2F70A3667}
+	EndGlobalSection
+EndGlobal
