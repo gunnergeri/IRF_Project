@@ -33,9 +33,9 @@ namespace bead_C5DLQT
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void class11_Click_1(object sender, EventArgs e)
         {
-            this.button2.Enabled = false;
+            this.class11.Enabled = false;
 
             int min = int.Parse(this.comboBox1.SelectedItem.ToString());
             int sec = int.Parse(this.comboBox2.SelectedItem.ToString());
@@ -64,7 +64,7 @@ namespace bead_C5DLQT
             }
         }
 
-
+ 
     }
 
 }

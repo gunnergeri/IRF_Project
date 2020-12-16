@@ -21,7 +21,7 @@ namespace bead_C5DLQT
         {
             InitializeComponent();
             context.Hypeshops.Load();
-            
+
             listBox1.DataSource = context.Hypeshops.Local;
             gettorles();
             listBox1.ValueMember = "Id";
@@ -32,7 +32,7 @@ namespace bead_C5DLQT
 
 
 
-       
+
 
         private void gettorles()
         {
@@ -72,9 +72,9 @@ namespace bead_C5DLQT
 
             if (sfd.ShowDialog() != DialogResult.OK) return;
 
-            using(StreamWriter sw=new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
             {
-                foreach(var s in context.Hypeshops)
+                foreach (var s in context.Hypeshops)
                 {
                     sw.Write(s.Modell);
                     sw.Write(";");
@@ -89,8 +89,23 @@ namespace bead_C5DLQT
                     sw.WriteLine();
                 }
 
-                
+
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            listBox1.DataSource = (from x in context.Hypeshops
+                                   where x.Modell.StartsWith(textBox2.Text)
+                                   select x).ToList();
+            listBox1.DisplayMember = "Modell";
+        }
+
+        private void databutton_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+
         }
     }
 }
